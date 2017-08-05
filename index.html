@@ -1,1 +1,21 @@
-<html><head><meta charset="UTF-8"/><meta name="title" content="Test"/></head><body><div id="root"><div data-reactroot="" data-reactid="1" data-react-checksum="-513450959"><h1 data-reactid="2">Hello world!</h1><p data-reactid="3"><!-- react-text: 4 -->Count: <!-- /react-text --><!-- react-text: 5 -->0<!-- /react-text --></p><button data-reactid="6">Increment</button><button data-reactid="7">Decrement</button></div></div><script>window.A = true;</script><script src="dist/bundle.js"></script></body></html>
+<html><head><meta charset="UTF-8"/><meta name="title" content="Test"/><style>
+  #root-desktop {
+    display: block;
+  }
+
+  @media screen and (max-device-width: 700px) {
+    #root-desktop {
+      display: none;
+    }
+  }
+
+  #root-mobile {
+    display: none;
+  }
+
+  @media screen and (max-device-width: 700px) {
+    #root-mobile {
+      display: block;
+    }
+  }
+</style></head><body><div id="root-desktop"><div data-reactroot="" data-reactid="1" data-react-checksum="-2061867551"><h1 data-reactid="2">Hello desktop users!</h1><!-- react-empty: 3 --><p data-reactid="4"><!-- react-text: 5 -->Count: <!-- /react-text --><!-- react-text: 6 -->0<!-- /react-text --></p><button data-reactid="7">Increment</button><button data-reactid="8">Decrement</button></div></div><div id="root-mobile"><div data-reactroot="" data-reactid="1" data-react-checksum="-1037933217"><!-- react-empty: 2 --><h1 data-reactid="3">Hello mobile users!</h1><p data-reactid="4"><!-- react-text: 5 -->Count: <!-- /react-text --><!-- react-text: 6 -->0<!-- /react-text --></p><button data-reactid="7">Increment</button><button data-reactid="8">Decrement</button></div></div><script>window.A = true;</script><script src="dist/bundle.js"></script></body></html>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Desktop, Mobile } from './Responsive';
 
 class App extends React.Component {
   constructor() {
@@ -22,7 +23,12 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Hello world!</h1>
+        <Desktop>
+          <h1>Hello desktop users!</h1>
+        </Desktop>
+        <Mobile>
+          <h1>Hello mobile users!</h1>
+        </Mobile>
         <p>Count: {this.state.count}</p>
         <button onClick={this.increment}>Increment</button>
         <button onClick={this.decrement}>Decrement</button>
